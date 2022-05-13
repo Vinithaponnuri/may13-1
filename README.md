@@ -15,3 +15,16 @@ class Solution:
             print('1')
         else:
             print('0')
+
+OR
+
+from math import sqrt
+class Solution:
+    def isPrime (self, N):
+        # code here
+        if N==1:
+            return 0
+        for i in range(2,int(sqrt(N)+1)):
+            if N%i==0:
+                return 0  # not prime
+        return 1  #prime
